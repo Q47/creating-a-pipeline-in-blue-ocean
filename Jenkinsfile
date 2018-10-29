@@ -27,7 +27,7 @@ pipeline {
         sh './jenkins/scripts/kill.sh'
       }
     }
-    stage('') {
+    stage('Slack') {
       steps {
         slackSend 'Build complete'
       }
