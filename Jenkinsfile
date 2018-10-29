@@ -27,5 +27,10 @@ pipeline {
         sh './jenkins/scripts/kill.sh'
       }
     }
+    stage('') {
+      steps {
+        slackSend 'Build complete'
+      }
+    }
   }
 }
